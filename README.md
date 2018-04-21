@@ -14,9 +14,9 @@ Testbench Inputs:
 
          0ns   2ns   4ns
       
-         0     7     2
+         0     7     2              A
 
-         0     3     1
+         0     3     1              B
 
-         0     0     0
+         0     0     0              CIN
 
