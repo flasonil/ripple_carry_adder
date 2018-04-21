@@ -12,11 +12,11 @@ Commands to compile and run simulation on ModelSim SE-64 10.5
 
 Testbench Inputs:
 
-      0ns   2ns   4ns
+            0ns   2ns   4ns
       
-A     0     7     2
+A           0     7     2
 
-B     0     3     1
+B           0     3     1
 
-CIN   0     0     0
+CIN         0     0     0
 
