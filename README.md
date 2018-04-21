@@ -9,7 +9,9 @@ Commands to compile and run simulation on ModelSim SE-64 10.5
 
 >vsim
 
+
 Testbench Inputs:
+
       0ns   2ns   4ns
       
 A     0     7     2
