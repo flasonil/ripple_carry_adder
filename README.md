@@ -4,7 +4,9 @@
 
 Commands to compile and run simulation on ModelSim SE-64 10.5
 >vlog -sw -work work -quiet ripple_carry_adder_beh.sv
+
 >vlog -sw -work work -quiet testbench.sv
+
 >vsim
 
 Testbench Inputs:
