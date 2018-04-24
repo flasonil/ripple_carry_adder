@@ -7,7 +7,7 @@ Commands to compile and run simulation on ModelSim SE-64 10.5
 
 >vlog -sw -work work -quiet testbench.sv
 
->vsim
+>vsim testbench -novopt
 
 
 Testbench Inputs:
