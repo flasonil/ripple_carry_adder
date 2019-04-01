@@ -1,5 +1,3 @@
-
-
 module ripple_carry_adder_beh
 (
 	input logic [2:0] A,
@@ -14,7 +12,7 @@ logic INT0,INT1;
 
 assign SUM[0] = A[0] ^ B[0] ^ CIN;
 
-assign INT0 = A[0] & B[0];
+assign INT0 = (A[0] & B[0])|(CIN & (A[0] ^ B[0]));
 
 assign SUM[1] = A[1] ^ B[1] ^ INT0;
 
