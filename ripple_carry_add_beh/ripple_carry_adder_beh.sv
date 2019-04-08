@@ -10,18 +10,18 @@ module ripple_carry_adder_beh
 
 logic INT0,INT1;
 
-//Can be replaced by a for loop	
+	//Can be replaced by a for loop	
 	
-assign SUM[0] = A[0] ^ B[0] ^ CIN;
+	assign SUM[0] = A[0] ^ B[0] ^ CIN;
 
-assign INT0 = (A[0] & B[0])|(CIN & (A[0] ^ B[0]));
+	assign INT0 = (A[0] & B[0])|(CIN & A[0])|(CIN & B[0]);
 
-assign SUM[1] = A[1] ^ B[1] ^ INT0;
+	assign SUM[1] = A[1] ^ B[1] ^ INT0;
 
-assign INT1 = (A[1] & B[1])|(INT0 & (A[1] ^ B[1]));
+	assign INT1 = (A[1] & B[1])|(INT0 & A[1])|(INT0 & B[1]);
 
-assign SUM[2] = A[2] ^ B[2] ^ INT1;
+	assign SUM[2] = A[2] ^ B[2] ^ INT1;
 
-assign COUT = (A[2] & B[2])|(INT1 & (A[2] ^ B[2]));
+	assign COUT = (A[2] & B[2])|(INT1 & A[2])|(INT1 & B[2]);
 
 endmodule
